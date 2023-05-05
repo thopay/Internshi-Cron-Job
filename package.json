@@ -1,0 +1,14 @@
+{
+    "name": "vercel-cron-job",
+    "version": "1.0.0",
+    "dependencies": {
+      "axios": "^0.24.0"
+    },
+    "scripts": {
+      "start": "vercel dev"
+    },
+    "engines": {
+      "node": "14.x"
+    },
+    "license": "MIT"
+  }
