@@ -2,7 +2,6 @@
     "version": 2,
     "functions": {
         "api/checkUpdates.js": {
-            "runtime": "nodejs14.x",
             "memory": 1024,
             "maxDuration": 10
         }
