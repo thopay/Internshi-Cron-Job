@@ -1,11 +1,9 @@
 const axios = require("axios");
 
-const GITHUB_API_URL = "https://api.github.com";
-const REPO_URL = "https://github.com/pittcsc/Summer2023-Internships/blob/dev/README-2024.md";
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
 async function getLatestCommitSha() {
-  const response = await axios.get(`${GITHUB_API_URL}/repos/pittcsc/Summer2023-Internships/commits?path=README-2024.md&sha=dev`);
+  const response = await axios.get(`https://api.github.com/repos/pittcsc/Summer2023-Internships/commits?path=README-2024.md&sha=dev`);
   return response.data[0].sha;
 }
 
